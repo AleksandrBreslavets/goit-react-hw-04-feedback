@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FeedbackOptions } from "./FeedbackOptions/FeedbackOptions";
 import { Statistics } from "./Statistics/Statistics";
 import { Notification } from "./Notification/Notification";
+import { Section } from "./Section/Section";
 
 export const App = () => {
 
@@ -52,10 +53,10 @@ export const App = () => {
 console.log(feedbackOptions)
   return (
     
-      <>
+      <Section>
         <FeedbackOptions options={feedbackOptions} onLeaveFeedback={onBtnClick} />
         {renderCheck()}
-      </>
+      </Section>
     )
   
 }
